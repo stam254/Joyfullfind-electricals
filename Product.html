@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joyfullfind Products</title>
+  <link rel="icon" href="Assets/Images/products.png" />
+
+  <style>
+    /* ===== General Page Styling ===== */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url("Assets/Images/background.jpg") no-repeat center center/cover;
+      color: #222;
+      background-attachment: fixed;
+    }
+
+    /* ===== Heading Styles ===== */
+    h1 {
+      text-align: center;
+      color: white;
+      background: linear-gradient(90deg, #b8860b, #daa520, #ffd700);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      letter-spacing: 1px;
+      transition: all 0.4s ease;
+      text-transform: uppercase;
+    }
+
+    h1:hover {
+      background: linear-gradient(90deg, #00c3ff, #0099ff);
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      color: #b8860b;
+      margin-top: 40px;
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    ul {
+      text-align: left;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 17px;
+    }
+
+    ul li {
+      margin: 6px 0;
+      padding-left: 5px;
+    }
+
+    /* ===== Table Styling ===== */
+    table {
+      width: 80%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    th {
+      background-color: #00bfff;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+
+    tr:hover {
+      background-color: #d0f0ff;
+      transform: scale(1.01);
+      transition: all 0.3s ease;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      th, td {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Why Choose Joyfullfind Electrical Products?</h1>
+
+  <p><strong>Here’s why our customers trust us:</strong></p>
+  <ul>
+    <li>Experienced, licensed, and customer-focused team</li>
+    <li>Fast and reliable service delivery</li>
+    <li>Affordable pricing with no hidden costs</li>
+    <li>24/7 emergency support available</li>
+    <li>Quality guarantee on all installations</li>
+  </ul>
+
+  <h2>Featured Products</h2>
+  <p>Here’s a list of our top-rated electrical products:</p>
+
+  <table>
+    <tr>
+      <th>S/No</th>
+      <th>Product Name</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Available Units</th>
+    </tr>
+    <tr>
+      <td>111001</td>
+      <td>Oraimo Headphones</td>
+      <td>Headphones</td>
+      <td>$50</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>111002</td>
+      <td>Lenovo Adapter Charger</td>
+      <td>Charger</td>
+      <td>$100</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>111003</td>
+      <td>HP Laptops</td>
+      <td>Laptops</td>
+      <td>$250</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>111004</td>
+      <td>Alipu Woofers</td>
+      <td>Woofers</td>
+      <td>$150</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>111005</td>
+      <td>Sony Home Theatres</td>
+      <td>Home Theatres</td>
+      <td>$145</td>
+      <td>2</td>
+    </tr>
+  </table>
+</body>
+</html>

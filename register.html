@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+
+  <link rel="icon" href="Assets/Images/register.png" />
+  <link rel="stylesheet" href="css/register.css" />
+
+  <style>
+    
+    .signup-heading {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 900;
+      font-family: "Poppins", sans-serif;
+      color: #ffffff;
+      text-shadow: 0 0 10px #00bfff, 0 0 20px #0077ff, 0 0 40px #0077ff;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00bfff, 0 0 20px #0077ff, 0 0 40px #0077ff;
+      }
+      to {
+        text-shadow: 0 0 20px #66ccff, 0 0 40px #3399ff, 0 0 60px #0077ff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Registration Form -->
+  <form>
+    <legend class="signup-heading">✨ Sign Up With Joyfullfind  Electricals✨</legend>
+
+    <label for="FullName">Full Name:</label><br />
+    <input type="text" placeholder="Enter your Full Name" id="FullName" required />
+    <br /><br />
+
+    <label for="Username">Username:</label><br />
+    <input type="text" placeholder="Enter your Username" id="Username" required />
+    <br /><br />
+
+    <label for="Email">Email:</label><br />
+    <input type="email" placeholder="4563@gmail.com" id="Email" required />
+    <br /><br />
+
+    <label for="Password">Password:</label><br />
+    <input type="password" placeholder="Type Password..." id="Password" required />
+    <br /><br />
+
+    <label for="ConfirmPassword">Confirm Password:</label><br />
+    <input type="password" placeholder="Re-type Password..." id="ConfirmPassword" required />
+    <br /><br />
+
+    <label for="YOB">Year of Birth:</label>
+    <input type="date" id="YOB" name="YOB" required />
+    <br /><br />
+
+    <label for="dt">Date and Time:</label>
+    <input type="datetime-local" id="dt" name="dt" required />
+    <br /><br />
+
+    <label for="PhoneNumber">Phone Number:</label>
+    <input type="tel" placeholder="+254 712 345 678" id="PhoneNumber" required />
+    <br /><br />
+
+    <label for="Nationality">Select Nationality:</label>
+    <select id="Nationality" required>
+      <option value="" disabled selected>--Choose one--</option>
+      <option>South Africa</option>
+      <option>Italian</option>
+      <option>American</option>
+      <option>Canadian</option>
+      <option>British</option>
+      <option>Brazilian</option>
+    </select>
+    <br /><br />
+
+    <p>Choose your favourite team:</p>
+    <label><input type="radio" name="team" value="Manchester City" /> Manchester City</label><br />
+    <label><input type="radio" name="team" value="Real Madrid" /> Real Madrid</label><br />
+    <label><input type="radio" name="team" value="Barcelona" /> Barcelona</label><br />
+    <label><input type="radio" name="team" value="Liverpool" /> Liverpool</label>
+    <br /><br />
+
+    <p>What is your best programming language?</p>
+    <label><input type="checkbox" name="lang" value="Python" /> Python</label><br />
+    <label><input type="checkbox" name="lang" value="JavaScript" /> JavaScript</label><br />
+    <label><input type="checkbox" name="lang" value="Java" /> Java</label><br />
+    <label><input type="checkbox" name="lang" value="C++" /> C++</label>
+    <br /><br />
+
+    <label for="message">Describe Yourself:</label><br />
+    <textarea
+      name="message"
+      id="message"
+      cols="45"
+      rows="5"
+      placeholder="Tell us about yourself..."
+      required
+    ></textarea>
+    <br /><br />
+
+    <button type="submit">Create An Account</button>
+  </form>
+</body>
+</html>

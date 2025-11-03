@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Joyfullfind Location</title>
+  <link rel="icon" href="Assets/Images/location.png" />
+
+  <style>
+    /* ===== Page Styling ===== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url("Assets/Images/background2.jpg") no-repeat center center/cover;
+      background-attachment: fixed;
+      color: #222;
+      padding: 40px;
+    }
+
+    /* ===== Animated Gradient Heading ===== */
+    h1 {
+      font-size: 45px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #007bff, #00e1ff, #0099ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slide 6s infinite linear;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    @keyframes slide {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* ===== Paragraph Styling ===== */
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    /* ===== Map Container ===== */
+    .map-container {
+      max-width: 90%;
+      margin: 30px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .map-container:hover {
+      transform: scale(1.02);
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 0;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      iframe {
+        height: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Our Location — Where to Find Us</h1>
+
+  <p>
+    We are located at <strong>Minute Ninja Empire</strong>, near <strong>Higher Heights Towers</strong>,
+    Room 206. You can also find us inside <strong>University of Kabianga, Hostel 5</strong>.
+  </p>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.697129577012!2d35.13578907386576!3d-0.44657759954903997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182af952a4f0a645%3A0xb173ef6fca4bb197!2sUNIVERSITY%20OF%20KABIANGA%2C%20(UoK)!5e0!3m2!1sen!2ske!4v1761807951906!5m2!1sen!2ske"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</body>
+</html>
