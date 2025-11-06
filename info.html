@@ -16,7 +16,7 @@
 
 <body>
     
-    <h1 class="text-success text-center mt-4 mb-3 ">Your Happy place to shop Online</h1>
+    <h1 class="text-warning text-center mt-4 mb-3 bg-dark">Your Happy place to shop Online</h1>
    <!-- Navigation Buttons --> 
 <button class="btn btn-outline-primary">Home</button>
 <button class="btn btn-outline-warning">About Us</button>
@@ -39,7 +39,7 @@
   <div class="row align-items-center">
     
     <div class="col-md-5">
-      <img src="Assets/Images/customer.jpeg" alt="Customer Service" class="img-fluid rounded shadow">
+      <img src="Assets/Images/customer.jpeg" alt="Customer Service" class="img-fluid rounded-circle ">
     </div>
 
     <div class="col-md-7">
@@ -53,7 +53,78 @@
 
   </div>
 </div>
+<!--product categories-->
+<h1 class="mt-5 text-center">Product Categories</h1>
+<p class="container fw-bolder ">In Bootstrap, a container is a layout wrapper used to hold all your page content and control the maximum width of that content so it doesn’t stretch edge-to-edge on the screen. It adds automatic left and right spacing and helps align elements properly in a responsive way. It is also the main parent element used when building the Bootstrap grid system together with rows and columns. You can use .container for a centered fixed width layout or .container-fluid when you want your content to go full width across the entire screen.</p>
+
+<!-- PRODUCT CATEGORY SECTION -->
+<div class="container my-5">
+  
+  <!-- Title -->
+  <h1 class="text-center mb-4">Product Categories</h1>
+
+  <!-- Row for 3 products -->
+  <div class="row g-4 text-center">
+
+    <!-- CARD 1 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow product-card"> <!-- h-100 makes all cards equal height -->
+        
+        <!-- Product Image -->
+        <img src="Assets/Images/electric.png" class="card-img-top p-3" alt="">
+
+        <!-- Product Content -->
+        <div class="card-body">
+          <h4 class="card-title fw-bold">Electronics</h4>
+          <p class="card-text fw-semibold">
+            Find a wide range of electronic products including smartphones, laptops, tablets, and accessories.
+          </p>
+        </div>
+
+        <!-- Button Footer -->
+        <div class="card-footer bg-white border-0 pb-4 px-4">
+          <a href="index.html" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow product-card">
+        <img src="Assets/Images/toys.png" class="card-img-top p-3" alt="">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">Toys & Games</h4>
+          <p class="card-text fw-semibold">
+            Explore toys and games for all ages. From educational toys to action figures.
+          </p>
+        </div>
+        <div class="card-footer bg-white border-0 pb-4 px-4">
+          <a href="about.html" class="btn btn-success w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow product-card">
+        <img src="Assets/Images/fashion.png" class="card-img-top p-3" alt="">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">Fashion & Design</h4>
+          <p class="card-text fw-semibold">
+            Discover trendy clothing, accessories and footwear to express your style.
+          </p>
+        </div>
+        <div class="card-footer bg-white border-0 pb-4 px-4">
+          <a href="services.html" class="btn btn-warning w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
+
+<br><br><br><br><br>
 </body>
 </html>
